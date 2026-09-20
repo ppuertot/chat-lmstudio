@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  chat:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - LMSTUDIO_URL=http://host.docker.internal:1234
+    extra_hosts:
+      - host.docker.internal:host-gateway

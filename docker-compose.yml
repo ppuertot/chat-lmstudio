@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  chat:
+    build: .
+    environment:
+      - LMSTUDIO_URL=http://localhost:1234
+    network_mode: host
